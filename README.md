@@ -1,7 +1,7 @@
 # spring-boot-cassandra
 
 Example of working with Cassandra usign Spring annotation.
-`SpringBootApplication` helping to lunch application.
+`SpringBootApplication` helping to launch application.
 After application start it creates `keyspace` defined in `application.properties` and table `Tweets`.
 
 You can check data in Cassandra using consol and cqls syntax:
