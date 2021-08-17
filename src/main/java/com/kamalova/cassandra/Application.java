@@ -21,6 +21,7 @@ public class Application implements CommandLineRunner {
 
   @Override
   public void run(String... args) {
+    tweetRepository.deleteAll();
     final Tweet tweet0 = new Tweet(UUID.randomUUID().toString(), "Google released new design for icons in 2020!");
     final Tweet tweet1 = new Tweet(UUID.randomUUID().toString(), "Apple released new OS in 2020!");
     final Tweet tweet2 = new Tweet(UUID.randomUUID().toString(), "Google release new searching features!" );
