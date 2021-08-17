@@ -25,8 +25,6 @@ public class Application implements CommandLineRunner {
     final Tweet tweet1 = new Tweet(UUID.randomUUID().toString(), "Apple released new OS in 2020!");
     final Tweet tweet2 = new Tweet(UUID.randomUUID().toString(), "Google release new searching features!" );
     tweetRepository.insert(Arrays.asList(tweet0, tweet1, tweet2));
-
-    System.out.println("Results");
     tweetRepository.findAll().forEach(System.out::println);
   }
 }
